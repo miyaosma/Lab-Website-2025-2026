@@ -8,8 +8,8 @@ Primary Colors:
 FFC53E - yellow
 
 Secondary Colors:
-171717 - dark gray
-F9F3F1-  light gray
+171717 - black
+F9F3F1-  white
 
 Tertiary Colors:
 B6B6B6 - gray
@@ -17,18 +17,20 @@ B6B6B6 - gray
 */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
 body {
     font-family: "Popins" sans-serif;
-
 }
 
-header {
+.intro {
     background-color: #0C3C3B;
+    color: #F9F3F1;
+
 }
 
 hr {
@@ -36,10 +38,34 @@ hr {
 }
 
 .navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 64px;
     display: flex;
     align-items: center;
-    padding: 20px 40px;
-    gap: 40px;
+    justify-content: space-between;
+
+}
+
+.btn-download{
+    
+}
+.logo img {
+  height: 50px;
+}
+
+/* меню */
+.menu {
+  display: flex;
+  gap: 32px;
+}
+
+/* кнопки app store & google pay */
+.btn-img {
+  height: 56px;
+  margin-right: 16px;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .students {
