@@ -1,0 +1,78 @@
+/* 
+COLOR PALETTE
+
+Primary Colors:
+0C3C3B - dark green 
+005251 - mid green 
+00615F - light green
+FFC53E - yellow
+
+Secondary Colors:
+171717 - dark gray
+F9F3F1-  light gray
+
+Tertiary Colors:
+B6B6B6 - gray
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Popins" sans-serif;
+
+}
+
+header {
+    background-color: #0C3C3B;
+}
+
+hr {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 40px;
+}
+
+.students {
+    display: flex;
+    gap: 20px;
+}
+
+.students img {
+    width: 190px;
+    height: 110px;
+    object-fit: cover;
+}
+
+.mockups {
+    display: flex;
+    gap: 20px;
+}
+
+.mockups img {
+    width: 190px;
+    height: 110px;
+    object-fit: contain;
+
+}
+
+.how-app-works img {
+    width: 190px;
+    height: 110px;
+    object-fit: contain;
+}
+
+.member img {
+    width: 190px;
+    height: 110px;
+    object-fit: contain;
+}
