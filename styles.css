@@ -105,21 +105,21 @@ img {
 }
 
 /* buttons (yellow) */
-.main-btn{
-  flex: 0 0 220px;                 
-  justify-content: center;        
+.main-btn {
+    flex: 0 0 220px;
+    justify-content: center;
 
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
 
-  padding: 12px 18px;
-  border-radius: 50px;
-  font-size: 14px;
-  font-weight: 600;
+    padding: 12px 18px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
 
-  background: var(--yellow);
-  color: var(--offwhite);               
+    background: var(--yellow);
+    color: var(--offwhite);
 }
 
 .sign-btn,
@@ -154,10 +154,10 @@ img {
     justify-content: space-between;
 }
 
-.logo{
-  flex: 0 0 220px;  
-  display: flex;
-  align-items: center;
+.logo {
+    flex: 0 0 220px;
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
@@ -165,11 +165,11 @@ img {
 }
 
 /* menu */
-.menu{
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  gap: 34px;
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 34px;
 }
 
 .menu a {
@@ -336,12 +336,13 @@ img {
 }
 
 /*  стрелки слева + карточки справа */
-.merch-bottom{
-  margin-top: 64px;
-  display: grid;
-  grid-template-columns: 120px 1fr; /* было 160 */
-  column-gap: 102px;
-  align-items: start;
+.merch-bottom {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    /* было 160 */
+    column-gap: 102px;
+    align-items: start;
 }
 
 /* arrows: start at 100px from page edge
@@ -354,28 +355,30 @@ img {
 }
 
 /* cards row */
-.merch-cards{
-  display: flex;
-  gap: 32px;
-  width: 100%;
+.merch-cards {
+    display: flex;
+    gap: 32px;
+    width: 100%;
 }
 
 /* каждая карточка (текст на зелёном фоне ниже) */
-.merch-item{
-  flex: 1;            /* главное */
-  min-width: 0;       /* чтобы flex не ломался */
+.merch-item {
+    flex: 1;
+    /* главное */
+    min-width: 0;
+    /* чтобы flex не ломался */
 }
 
 /* белый блок только под картинку */
-.merch-photo{
-  width: 100%;
-  height: 360px;
-  background: var(--offwhite);
-  border-radius: 24px;
-  padding: 1px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.merch-photo {
+    width: 100%;
+    height: 360px;
+    background: var(--offwhite);
+    border-radius: 24px;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .merch-photo img {
@@ -521,262 +524,275 @@ img {
     color: var(--gray);
     font-size: 12px;
 }
- 
+
 /* RESPONSIVE STYLES */
 /* ---------- TABLET --------- */
 @media (max-width: 1024px) {
 
-  /* Make the page fit smaller screens */
-  .container{
-    width: 100%;
-    padding: 0 40px;
-  }
+    /* Make the page fit smaller screens */
+    .container {
+        width: 100%;
+        padding: 0 40px;
+    }
 
-  /* Navbar stack menu under logo */
-  .navbar{
-    flex-wrap: wrap;
-    gap: 16px;
-  }
+    /* Navbar stack menu under logo */
+    .navbar {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
 
 
-  .logo{
-    flex: 0 0 auto;
-  }
+    .logo {
+        flex: 0 0 auto;
+    }
 
-  .main-btn{
-    flex: 0 0 auto;        
-    justify-content: center;
-    padding: 10px 16px;
-    font-size: 13px;
-  }
+    .main-btn {
+        flex: 0 0 auto;
+        justify-content: center;
+        padding: 10px 16px;
+        font-size: 13px;
+    }
 
-  /* Menu to new line and centers */
-  .menu{
-    flex: 0 0 100%;
-    justify-content: center;
-    gap: 22px;
-  }
+    /* Menu to new line and centers */
+    .menu {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        flex-wrap: nowrap;
+        white-space: nowrap;
 
-  .menu a{
-    font-size: 14px;
-  }
+    }
 
-  /* HERO phone image smaller  */
-  .hero{
-    gap: 24px;
-  }
 
-  .hero-left{
-    width: 55%;
-  }
+    .menu a {
+        font-size: 14px;
+    }
 
-  .hero-right{
-    width: 45%;
-  }
+    /* HERO phone image smaller  */
+    .hero {
+        gap: 24px;
+    }
 
-  .hero-title{
-    font-size: 52px;
-  }
+    .hero-left {
+        width: 55%;
+    }
 
-  .hero-phone{
-    width: 340px;
-  }
+    .hero-right {
+        width: 45%;
+    }
 
-  /* 2 columns sections */
-  .two-columns{
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 28px;
-  }
+    .hero-title {
+        font-size: 52px;
+    }
 
-  .content-text,
-  .content-image{
-    width: 100%;
-  }
+    .hero-phone {
+        width: 340px;
+    }
 
-  /* About photo grid */
-  .photo.big{ height: 280px; }
-  .photo.small{ height: 135px; }
+    /* 2 columns sections */
+    .two-columns {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 28px;
+    }
 
-  /* Merch stack arrows above cards */
-  .merch-top{
-    flex-direction: column;
-    gap: 16px;
-  }
+    .content-text,
+    .content-image {
+        width: 100%;
+    }
 
-  .merch-title{
-    font-size: 44px;
-  }
+    /* About photo grid */
+    .photo.big {
+        height: 280px;
+    }
 
-  .merch-text{
-    width: 100%;
-    max-width: 100%;
-    margin-top: 0;
-  }
+    .photo.small {
+        height: 135px;
+    }
 
-  /* column (arrows boven) on tablet */
-  .merch-bottom{
-    display: block;
-    margin-top: 36px;
-  }
+    /* Merch stack arrows above cards */
+    .merch-top {
+        flex-direction: column;
+        gap: 16px;
+    }
 
-  .merch-controls{
-    margin-left: 0;
-    margin-bottom: 18px;
-  }
+    .merch-title {
+        font-size: 44px;
+    }
 
-  /* Cards wrap to next line */
-  .merch-cards{
-    flex-wrap: wrap;
-    gap: 20px;
-  }
+    .merch-text {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 0;
+    }
 
-  .merch-item{
-    flex: 0 0 calc(50% - 10px); /* 2 cards per row */
-  }
+    /* column (arrows boven) on tablet */
+    .merch-bottom {
+        display: block;
+        margin-top: 36px;
+    }
 
-  .merch-photo{
-    height: 320px;
-  }
+    .merch-controls {
+        margin-left: 0;
+        margin-bottom: 18px;
+    }
 
-  /* FAQ  */
-  .faq-list{
-    width: 100%;
-  }
+    /* Cards wrap to next line */
+    .merch-cards {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 
-  /* Footer stack columns */
-  .footer-grid{
-    flex-direction: column;
-    gap: 28px;
-  }
+    .merch-item {
+        flex: 0 0 calc(50% - 10px);
+        /* 2 cards per row */
+    }
 
-  .footer-bottom{
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
-  }
+    .merch-photo {
+        height: 320px;
+    }
+
+    /* FAQ  */
+    .faq-list {
+        width: 100%;
+    }
+
+    /* Footer stack columns */
+    .footer-grid {
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
 }
 
 
 /* ---------- PHONE  --------- */
 @media (max-width: 600px) {
 
-  .container{
-    padding: 0 20px;
-  }
+    .container {
+        padding: 0 20px;
+    }
 
-  /* Navbar center everything */
-  .navbar{
-    justify-content: center;
-    gap: 12px;
-  }
+    /* Navbar center everything */
+    .navbar {
+        justify-content: center;
+        gap: 12px;
+    }
 
-  .logo img{
-    height: 40px;
-  }
+    .logo img {
+        height: 40px;
+    }
 
-  .menu{
-    flex: 0 0 100%;
-    flex-wrap: wrap;              /* links in 2 lines */
-    justify-content: center;
-    gap: 14px 18px;
-  }
+    .menu {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        flex-wrap: nowrap;
+        white-space: nowrap;
 
-  .menu a{
-    font-size: 13px;
-  }
+    }
 
-  .main-btn{
-    width: 100%;
-    justify-content: center;
-  }
+    .menu a {
+        font-size: 13px;
+    }
 
-  /* HERO stack phone under text */
-  .hero{
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 36px;
-    gap: 20px;
-  }
+    .main-btn {
+        justify-content: center;
+    }
 
-  .hero-left,
-  .hero-right{
-    width: 100%;
-  }
+    /* HERO stack phone under text */
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 36px;
+        gap: 20px;
+    }
 
-  .hero-title{
-    font-size: 44px;
-    line-height: 1;
-  }
+    .hero-left,
+    .hero-right {
+        width: 100%;
+    }
 
-  .hero-text{
-    max-width: 100%;
-  }
+    .hero-title {
+        font-size: 44px;
+        line-height: 1;
+    }
 
-  .store-buttons{
-    flex-wrap: wrap;
-  }
+    .hero-text {
+        max-width: 100%;
+    }
 
-  .hero-right{
-    justify-content: center;
-  }
+    .store-buttons {
+        flex-wrap: wrap;
+    }
 
-  .hero-phone{
-    width: 290px;
-  }
+    .hero-right {
+        justify-content: center;
+    }
 
-  /* About photo grid 1 column */
-  .photo-grid{
-    grid-template-columns: 1fr;
-  }
+    .hero-phone {
+        width: 290px;
+    }
 
-  .photo.big{
-    grid-row: auto;
-    height: 240px;
-  }
+    /* About photo grid 1 column */
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
 
-  .photo.small{
-    height: 180px;
-  }
+    .photo.big {
+        grid-row: auto;
+        height: 240px;
+    }
 
-  /* Stats stack */
-  .stats{
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 14px;
-  }
+    .photo.small {
+        height: 180px;
+    }
 
-  .stat-line{
-    display: none; /* скрыть для телефона */
-  }
+    /* Stats stack */
+    .stats {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
 
-  /* Merch 1 card per row */
-  .merch-title{
-    font-size: 38px;
-  }
+    .stat-line {
+        display: none;
+        /* скрыть для телефона */
+    }
 
-  .merch-item{
-    flex: 0 0 100%;
-  }
+    /* Merch 1 card per row */
+    .merch-title {
+        font-size: 38px;
+    }
 
-  .merch-photo{
-    height: 300px;
-  }
+    .merch-item {
+        flex: 0 0 100%;
+    }
 
-  /* Buttons in sections: full width for easier tapping */
-  .trading-btn,
-  .download-btn,
-  .sign-btn{
-    width: 100%;
-    text-align: center;
-  }
+    .merch-photo {
+        height: 300px;
+    }
 
-  /* Footer: tighten text sizes */
-  .footer-column h4{
-    font-size: 22px;
-  }
+    /* Buttons in sections: full width for easier tapping */
+    .trading-btn,
+    .download-btn,
+    .sign-btn {
+        text-align: center;
+    }
 
-  .footer-column a{
-    font-size: 14px;
-  }
+    /* Footer: tighten text sizes */
+    .footer-column h4 {
+        font-size: 22px;
+    }
+
+    .footer-column a {
+        font-size: 14px;
+    }
 }
