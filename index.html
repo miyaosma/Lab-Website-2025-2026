@@ -15,13 +15,11 @@
 </head>
 
 <body>
-
-    <!-- HEADER -->
-    <div class="intro">
-        <header>
-            <!-- здесь должен быть логотип Fumble -->
-            <div class="navbar">
-                <div class="logo">
+    <!-- INTRO -->
+    <section class="intro">
+        <header class="header">
+            <div class="container navbar">
+                <div class="logo"> <!-- FOTKA LOGO-->
                     <img src="img/Logo Fumble.svg" alt="logo Fumble">
                 </div>
 
@@ -33,213 +31,269 @@
                     <a href="#contact">Contact</a>
                 </nav>
 
-                <button type="button" class="btn-download">Download the app</button>
+                <a class="main-btn" href="#download">Download the app &rarr; </a>
             </div>
         </header>
 
-        <hr>
+        <!-- HERO -->
+        <div class="container hero">
+            <div class="hero-left">
+                <p class="section-label section-label-light">Your space to learn together</p>
+                <h1 class="hero-title">Stumble less<br>learn more</h1>
 
-        <!-- HERO SECTION -->
-        <section class="hero">
-            <div class="hero-content">
-                <p>Your space to learn together</p>
-                <h2>Stumble less<br>learn more</h2>
-
-                <p>
+                <p class="hero-text">
                     Fumble is a student club where members support each other in learning.
                     We share notes or trade study tasks in a simple system. Our mission is to
                     make studying easier and effective while keeping academic integrity.
                 </p>
 
-                <!-- две кнопки-картинки-->
-                <a href="#">
-                    <img src="img/Download Apple.svg" alt="app store btn" class="btn-img"></a>
-
-                <a href="#">
-                    <img src="img/Download Google Play.svg" alt="google play btn" class="btn-img"></a>
-                <!-- справа картинка: рука держит телефон -->
-                <img src="img/Phone Mockup.png" alt="phone in hand, mockup">
+                <div class="store-buttons">
+                    <a href="#"><img src="img/Download Apple.svg" alt="App Store" class="btn-img"></a>
+                    <a href="#"><img src="img/Download Google Play.svg" alt="Google Play" class="btn-img"></a>
+                </div>
             </div>
 
-        </section>
-    </div>
-
-    <hr>
-
-    <!-- HOW FUMBLE HELPS SECTION -->
-    <section id="about">
-        <p>What we do</p>
-        <h2>How Fumble helps students succeed</h2>
-
-        <p>
-            Fumble lets students exchange help with notes, tutoring, or study tasks.
-            Members offer what they can, set conditions, and others accept trades that
-            fit their needs. It's an easy way to learn together, share skills, and
-            support each other throughout the semester.
-        </p>
-
-        <ul>
-            <li><strong>88%</strong>Satisfied users</li>
-            <li><strong>10x</strong>Help arrives faster</li>
-            <li><strong>250+</strong>Active students</li>
-        </ul>
-
-        <a href="#start-trading">Start trading now</a>
-
-        <!-- 3 фото студентов за учебой -->
-        <div class="students">
-            <img src="img/Foto 1.jpg" alt="students on a couch studying">
-            <img src="img/Foto 2.jpg" alt="students chatting on facetime">
-            <img src="img/foto 3.jpg" alt="studying with laptop on bed">
-        </div>
-    </section>
-
-    <hr>
-
-    <!-- MERCH SECTION -->
-    <section id="merch">
-        <p>Show your support with style</p>
-        <h2>Discover the Fumble merch collection</h2>
-
-        <p>
-            Our Fumble merch lets you represent your club while staying stylish
-            and comfortable. Every item is designed for students who love learning
-            and collaboration.
-        </p>
-
-        <!--  стрелочки-кнопки переключения товаров -->
-        <p>
-            <button type="button"> &larr; </button>
-            <button type="button"> &rarr; </button>
-        </p>
-
-        <div class="mockups">
-
-            <div>
-                <!-- картинка блокнота -->
-                <img src="img/Fumble Note.png" alt="notebook">
-                <h3>Notebook</h3>
-                <p>A clean space for notes, ideas, and your next study exchange.</p>
-            </div>
-
-            <div>
-                <!-- картинка ручки -->
-                <img src="img/Fumble Pen.png" alt="Fumble pen">
-                <h3>Pen</h3>
-                <p>Smooth writing, minimal look, always by your side in class.</p>
-            </div>
-
-            <div>
-                <!-- картинка Squishy -->
-                <img src="img/squishy.png" alt="Fumble squishy toy">
-                <h3>Squishy</h3>
-                <p>Squeeze away stress and stay focused during long study sessions.</p>
+            <div class="hero-right">
+                <img class="hero-phone" src="img/Phone Mockup.png" alt="phone in hand mockup">
             </div>
         </div>
     </section>
 
-    <hr>
 
-    <!-- UNDERSTANDING THE APP-->
-    <section id="how-it-works">
-        <p>How it works</p>
-        <h2>Understanding the Fumble app</h2>
+    <!-- WA WE DO - HOW FUMBLE HELPS -->
+    <section id="about" class="light-bg">
+        <div class="container two-columns">
+            <div class="content-text">
+                <p class="section-label section-label-dark">What We Do</p>
+                <h2 class="title">How Fumble helps<br>students succeed</h2>
 
-        <p>
-            Post what you can offer or what you need, set your conditions,
-            and complete trades with peers. Every successful trade earns reputation
-            points, helping you build trust and stay active in the community.
-        </p>
+                <p class="text">
+                    Fumble lets students exchange help with notes, tutoring, or study tasks.
+                    Members offer what they can, set conditions, and others accept trades that
+                    fit their needs. It's an easy way to learn together, share skills, and
+                    support each other throughout the semester.
+                </p>
 
-        <a id="download" href="#download">Download the app</a>
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-num">88%</div>
+                        <div class="stat-label">Satisfied users</div>
+                    </div>
+                    <div class="stat-line"></div>
 
-        <!-- справа: студенты за столом, смотрят в планшет -->
-        <div class="how-app-works">
-            <img src="img/foto 5.jpg" alt="students at table using tablet">
+                    <div class="stat">
+                        <div class="stat-num">10x</div>
+                        <div class="stat-label">Help arrives faster</div>
+                    </div>
+                    <div class="stat-line"></div>
+
+                    <div class="stat">
+                        <div class="stat-num">250+</div>
+                        <div class="stat-label">Active students</div>
+                    </div>
+                </div>
+
+                <a class="trading-btn" href="#start-trading">Start trading now &rarr;</a>
+            </div>
+
+            <div class="content-image">
+                <div class="photo-grid">
+                    <div class="photo big">
+                        <img src="img/Foto 1.jpg" alt="students on a couch studying">
+                    </div>
+                    <div class="photo small">
+                        <img src="img/Foto 2.jpg" alt="students chatting on facetime">
+                    </div>
+                    <div class="photo small">
+                        <img src="img/foto 3.jpg" alt="studying with laptop on bed">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <hr>
 
-    <!-- START YOUR JOURNEY-->
-    <section id="membership">
-        <div class="member">
-            <!-- слева картинка: люди в библиотеке за ноутбуком -->
-            <img src="img/foto 4.jpg" alt="students in library working together">
-        </div>
+    <!-- MERCH -->
+    <section id="merch" class="dark-bg">
+            <div class="container merch-top">
 
-        <p>Become a member</p>
-        <h2>Start your journey with Fumble</h2>
+                <div class="merch-head">
+                    <p class="section-label section-label-light">Show your support with style</p>
+                    <h2 class="title title-light merch-title">Discover the Fumble<br>merch collection</h2>
+                </div>
 
-        <p>
-            Becoming a Fumble member is simple and free. Just sign up with your
-            school account, create your profile, and start sharing or requesting help.
-        </p>
+                <p class="text text-light merch-text">
+                    Our Fumble merch lets you represent your club while staying
+                    stylish and comfortable. Every item is designed for students
+                    who love learning and collaboration.
+                </p>
+            </div>
 
-        <a href="#signup">Sign up today</a>
+            <div class="container merch-bottom">
+                <div class="merch-controls">
+                    <button class="arrow-btn" type="button" aria-label="Previous">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button class="arrow-btn filled" type="button" aria-label="Next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
 
+                <div class="merch-cards">
+                    <div class="merch-item">
+                        <div class="merch-photo">
+                            <img src="img/Fumble Note.png" alt="Notebook">
+                        </div>
+                        <h3 class="merch-name">Notebook</h3>
+                        <p class="merch-desc">A clean space for notes, ideas, and your next study exchange.</p>
+                    </div>
+
+                    <div class="merch-item">
+                        <div class="merch-photo">
+                            <img src="img/Fumble Pen.png" alt="Pen">
+                        </div>
+                        <h3 class="merch-name">Pen</h3>
+                        <p class="merch-desc">Smooth writing, minimal look, always by your side in class.</p>
+                    </div>
+
+                    <div class="merch-item">
+                        <div class="merch-photo">
+                            <img src="img/squishy.png" alt="Squishy">
+                        </div>
+                        <h3 class="merch-name">Squishy</h3>
+                        <p class="merch-desc">Squeeze away stress and stay focused during long study sessions.</p>
+                    </div>
+                </div>
+            </div>
     </section>
 
-    <hr>
+
+    <!-- UNDERSTANDING THE APP -->
+    <section id="how-it-works" class="light-bg">
+        <div class="container two-columns">
+            <div class="content-text">
+                <p class="section-label section-label-dark">How it works</p>
+                <h2 class="title">Understanding the<br>Fumble app</h2>
+
+                <p class="text">
+                    Post what you can offer or what you need, set your conditions,
+                    and complete trades with peers. Every successful trade earns reputation
+                    points, helping you build trust and stay active in the community.
+                </p>
+
+                <a id="download" class="download-btn" href="#">Download the app &rarr;</a>
+            </div>
+
+            <div class="content-image">
+                <div class="photo-card">
+                    <img src="img/foto 5.jpg" alt="students at table using tablet">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- START YOUR JOURNEY -->
+    <section id="membership" class="dark-bg">
+        <div class="container two-columns reverse-layout">
+            <div class="content-image">
+                <div class="photo-card">
+                    <img src="img/foto 4.jpg" alt="students in library working together">
+                </div>
+            </div>
+
+            <div class="content-text">
+                <p class="section-label section-label-light">Become a member</p>
+                <h2 class="title title-light">Start your journey<br>with Fumble</h2>
+
+                <p class="text text-light">
+                    Becoming a Fumble member is simple and free. Just sign up with your
+                    school account, create your profile, and start sharing or requesting help.
+                </p>
+
+                <a class="sign-btn" href="#signup">Sign up today &rarr; </a>
+            </div>
+        </div>
+    </section>
+
 
     <!-- FAQ -->
-    <section id="faq">
-        <p>FAQ</p>
-        <h2>Your questions answered</h2>
+    <section id="faq" class="light-bg">
+        <div class="container faq">
+            <p class="section-label section-label-dark center">FAQ</p>
+            <h2 class="title center">Your questions answered</h2>
 
-        <p>
-            Have other questions that you don't see in our FAQ?
-            You can find all the details on our contact page, where you can reach out to us directly.
-        </p>
+            <p class="text center faq-sub">
+                Have other questions that you don't see in our FAQ?
+                You can find all the details on our contact page, where you can reach out to us directly.
+            </p>
 
-        <!-- список вопросов -->
-        <ul>
-            <li>What is Fumble and how does it work?</li>
-            <li>What types of tasks or help can be exchanged on Fumble?</li>
-            <li>How does Fumble ensure academic integrity?</li>
-            <li>Do I need to pay to use the platform?</li>
-            <li>Can I participate if I'm not a member of the school?</li>
-        </ul>
+            <div class="faq-list">
+                <button class="faq-item" type="button">
+                    <span>What is Fumble and how does it work?</span>
+                    <span class="plus">+</span>
+                </button>
+                <button class="faq-item" type="button">
+                    <span>What types of tasks or help can be exchanged on Fumble?</span>
+                    <span class="plus">+</span>
+                </button>
+                <button class="faq-item" type="button">
+                    <span>How does Fumble ensure academic integrity?</span>
+                    <span class="plus">+</span>
+                </button>
+                <button class="faq-item" type="button">
+                    <span>Do I need to pay to use the platform?</span>
+                    <span class="plus">+</span>
+                </button>
+                <button class="faq-item" type="button">
+                    <span>Can I participate if I'm not a member of the school?</span>
+                    <span class="plus">+</span>
+                </button>
+            </div>
+        </div>
     </section>
 
-    <hr>
 
     <!-- FOOTER -->
-    <footer id="contact">
-        <!-- слева логотип Fumble -->
-        <h3>Fumble.</h3>
-        <p>Stumble less, learn more.</p>
+    <footer id="contact" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img class="footer-logo" src="img/Logo Fumble.svg" alt="Fumble logo">
+                <p class="footer-tagline">Stumble less, learn more.</p>
 
-        <!-- иконки соцсетей -->
-        <a href="https://instagram.com" aria-label="Instagram">
-            <i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-        <a href="https://facebook.com" aria-label="Facebook" class="icon-btn">
-            <i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://twitter.com" aria-label="X (Twitter)">
-            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
-        <h4>Explore</h4>
-        <ul>
-            <li><a href="#about">About us</a></li>
-            <li><a href="#how-it-works">How it works</a></li>
-            <li><a href="#membership">Membership</a></li>
-            <li><a href="#merch">Merch</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+                <div class="social">
+                    <a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
 
-        <div>
-            <h4>Other</h4>
-            <ul>
-                <li>User terms &amp; conditions</li>
-                <li>Privacy</li>
-                <li>Cookies</li>
-            </ul>
+            <div class="footer-column">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#how-it-works">How it works</a></li>
+                    <li><a href="#membership">Membership</a></li>
+                    <li><a href="#merch">Merch</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Other</h4>
+                <ul>
+                    <li><a href="#">User terms &amp; conditions</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
         </div>
 
-        <p>©2025 Fumble. All rights reserved.</p>
-
-        <p>English | Nederlands</p>
+        <div class="container footer-bottom">
+            <p>©2025 Fumble. All rights reserved.</p>
+            <p>English | Nederlands</p>
+        </div>
     </footer>
-
 
 </body>
 

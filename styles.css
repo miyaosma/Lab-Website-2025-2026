@@ -1,104 +1,782 @@
-/* 
+/*
 COLOR PALETTE
-
-Primary Colors:
-0C3C3B - dark green 
-005251 - mid green 
+0C3C3B - dark green
+005251 - mid green
 00615F - light green
 FFC53E - yellow
-
-Secondary Colors:
 171717 - black
-F9F3F1-  white
-
-Tertiary Colors:
+F9F3F1 - off-white
 B6B6B6 - gray
-
 */
+
+:root {
+    --dark: #0C3C3B;
+    --mid: #005251;
+    --lightgreen: #00615F;
+    --yellow: #FFC53E;
+    --black: #171717;
+    --offwhite: #F9F3F1;
+    --gray: #B6B6B6;
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
-    font-family: "Popins" sans-serif;
+    font-family: "Poppins", sans-serif;
+    color: var(--black);
+    background: var(--offwhite);
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 3px;
+}
+
+/* layout base */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 64px;
+}
+
+.center {
+    text-align: center;
+}
+
+/* section backgrounds */
+.light-bg {
+    background: var(--offwhite);
+    padding: 80px 0;
+}
+
+.dark-bg {
+    background: var(--dark);
+    padding: 80px 0;
+}
+
+/* small label above headings */
+.section-label {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    margin-bottom: 14px;
+}
+
+.section-label-light {
+    color: var(--yellow);
+}
+
+.section-label-dark {
+    color: var(--dark);
+    opacity: 0.8;
+}
+
+/* headings & text */
+.title {
+    font-size: 44px;
+    line-height: 1.05;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: var(--dark);
+}
+
+.title-light {
+    color: var(--offwhite);
+}
+
+.text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--dark);
+    max-width: 520px;
+}
+
+.text-light {
+    color: var(--offwhite);
+}
+
+/* buttons (yellow) */
+.main-btn{
+  flex: 0 0 220px;                 
+  justify-content: center;        
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 18px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+
+  background: var(--yellow);
+  color: var(--offwhite);               
+}
+
+.sign-btn,
+.download-btn,
+.trading-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    background: var(--yellow);
+    color: var(--offwhite);
+    border: 0;
+}
+
+/* INTRO */
 .intro {
-    background-color: #0C3C3B;
-    color: #F9F3F1;
-
+    background: var(--dark);
+    color: var(--offwhite);
+    padding-bottom: 40px;
 }
 
-hr {
-    display: none;
+.header {
+    padding-top: 24px;
 }
 
 .navbar {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 24px 64px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
-.btn-download{
-    
-}
-.logo img {
-  height: 50px;
-}
-
-/* меню */
-.menu {
+.logo{
+  flex: 0 0 220px;  
   display: flex;
-  gap: 32px;
+  align-items: center;
 }
 
-/* кнопки app store & google pay */
-.btn-img {
-  height: 56px;
-  margin-right: 16px;
-  display: inline-block;
-  cursor: pointer;
+.logo img {
+    height: 44px;
 }
 
-.students {
+/* menu */
+.menu{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+}
+
+.menu a {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--offwhite);
+}
+
+.menu a:hover {
+    color: var(--offwhite);
+}
+
+/* HERO */
+.hero {
+    padding-top: 55px;
     display: flex;
-    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
 }
 
-.students img {
-    width: 190px;
-    height: 110px;
+.hero-left {
+    width: 520px;
+}
+
+.hero-title {
+    font-size: 64px;
+    line-height: 0.95;
+    margin: 10px 0 18px;
+    font-weight: 800;
+}
+
+.hero-text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--offwhite);
+    margin-bottom: 26px;
+    max-width: 550px;
+}
+
+.store-buttons {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.btn-img {
+    height: 44px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.hero-right {
+    width: 520px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-phone {
+    width: 430px;
+}
+
+/* TWO COLUMNS content blocks */
+.two-columns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.content-text {
+    width: 520px;
+}
+
+.content-image {
+    width: 520px;
+}
+
+.reverse-layout {
+    flex-direction: row;
+}
+
+/* STATS */
+.stats {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin: 26px 0 26px;
+}
+
+.stat {
+    min-width: 140px;
+}
+
+.stat-num {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 4px;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: var(--dark);
+    opacity: 0.9;
+}
+
+.stat-line {
+    width: 4px;
+    height: 46px;
+    border-radius: 20px;
+    background: var(--yellow);
+}
+
+/* ABOUT photo grid */
+.photo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    align-items: stretch;
+}
+
+.photo {
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
-.mockups {
+.photo.big {
+    grid-row: span 2;
+    height: 320px;
+}
+
+.photo.small {
+    height: 152px;
+}
+
+/* MERCH */
+
+/* верхняя часть заголовок + текст справа */
+.merch-top {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    padding-bottom: 0;
+}
+
+.merch-title {
+    font-size: 49px;
+    line-height: 1.02;
+}
+
+/* текст справа чуть ниже */
+.merch-text {
+    width: 460px;
+    max-width: 460px;
+    margin-top: 34px;
+}
+
+/*  стрелки слева + карточки справа */
+.merch-bottom{
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: 120px 1fr; /* было 160 */
+  column-gap: 102px;
+  align-items: start;
+}
+
+/* arrows: start at 100px from page edge
+   page edge -> container padding 64px, so add +36px */
+.merch-controls {
+    display: flex;
+    gap: 14px;
+    margin-left: 6px;
+    /* 64 + 36 = 100 */
+}
+
+/* cards row */
+.merch-cards{
+  display: flex;
+  gap: 32px;
+  width: 100%;
+}
+
+/* каждая карточка (текст на зелёном фоне ниже) */
+.merch-item{
+  flex: 1;            /* главное */
+  min-width: 0;       /* чтобы flex не ломался */
+}
+
+/* белый блок только под картинку */
+.merch-photo{
+  width: 100%;
+  height: 360px;
+  background: var(--offwhite);
+  border-radius: 24px;
+  padding: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.merch-photo img {
+    width: 92%;
+    height: 92%;
+    object-fit: contain;
+}
+
+/* подписи под карточкой */
+.merch-name {
+    margin-top: 18px;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--offwhite);
+}
+
+.merch-desc {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--offwhite);
+    max-width: 260px;
+}
+
+/* buttons merch */
+.arrow-btn {
+    width: 54px;
+    height: 34px;
+    border-radius: 20px;
+    border: 1px solid var(--yellow);
+    background: transparent;
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.arrow-btn.filled {
+    background: var(--yellow);
+    color: var(--dark);
+    border-color: transparent;
+}
+
+
+/* FAQ */
+.faq {
+    padding-top: 10px;
+}
+
+.faq-sub {
+    margin: 14px auto 28px;
+    max-width: 680px;
+}
+
+.faq-list {
+    width: 760px;
+    margin: 0 auto;
+
+}
+
+.faq-item {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    padding: 16px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray);
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    color: #2b2b2b;
+    cursor: pointer;
+}
+
+.plus {
+    font-size: 18px;
+    color: #7a7a7a;
+}
+
+.photo-card {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* FOOTER */
+.footer {
+    background: var(--dark);
+    color: var(--offwhite);
+    padding: 56px 0 26px;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: flex-start;
+    padding-bottom: 30px;
+}
+
+.footer-logo {
+    height: 34px;
+    margin-bottom: 8px;
+}
+
+.footer-tagline {
+    font-size: 13px;
+    color: var(--gray);
+    margin-bottom: 14px;
+}
+
+.social {
+    display: flex;
+    gap: 14px;
+}
+
+.social a {
+    color: var(--gray);
+    font-size: 16px;
+}
+
+.footer-column h4 {
+    font-size: 31px;
+    margin-bottom: 12px;
+}
+
+.footer-column ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-column a {
+    font-size: 16px;
+    color: var(--gray);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #7a7a7a;
+    padding-top: 18px;
+    color: var(--gray);
+    font-size: 12px;
+}
+ 
+/* RESPONSIVE STYLES */
+/* ---------- TABLET --------- */
+@media (max-width: 1024px) {
+
+  /* Make the page fit smaller screens */
+  .container{
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  /* Navbar stack menu under logo */
+  .navbar{
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+
+  .logo{
+    flex: 0 0 auto;
+  }
+
+  .main-btn{
+    flex: 0 0 auto;        
+    justify-content: center;
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  /* Menu to new line and centers */
+  .menu{
+    flex: 0 0 100%;
+    justify-content: center;
+    gap: 22px;
+  }
+
+  .menu a{
+    font-size: 14px;
+  }
+
+  /* HERO phone image smaller  */
+  .hero{
+    gap: 24px;
+  }
+
+  .hero-left{
+    width: 55%;
+  }
+
+  .hero-right{
+    width: 45%;
+  }
+
+  .hero-title{
+    font-size: 52px;
+  }
+
+  .hero-phone{
+    width: 340px;
+  }
+
+  /* 2 columns sections */
+  .two-columns{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+
+  .content-text,
+  .content-image{
+    width: 100%;
+  }
+
+  /* About photo grid */
+  .photo.big{ height: 280px; }
+  .photo.small{ height: 135px; }
+
+  /* Merch stack arrows above cards */
+  .merch-top{
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .merch-title{
+    font-size: 44px;
+  }
+
+  .merch-text{
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  /* column (arrows boven) on tablet */
+  .merch-bottom{
+    display: block;
+    margin-top: 36px;
+  }
+
+  .merch-controls{
+    margin-left: 0;
+    margin-bottom: 18px;
+  }
+
+  /* Cards wrap to next line */
+  .merch-cards{
+    flex-wrap: wrap;
     gap: 20px;
+  }
+
+  .merch-item{
+    flex: 0 0 calc(50% - 10px); /* 2 cards per row */
+  }
+
+  .merch-photo{
+    height: 320px;
+  }
+
+  /* FAQ  */
+  .faq-list{
+    width: 100%;
+  }
+
+  /* Footer stack columns */
+  .footer-grid{
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .footer-bottom{
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
 }
 
-.mockups img {
-    width: 190px;
-    height: 110px;
-    object-fit: contain;
 
-}
+/* ---------- PHONE  --------- */
+@media (max-width: 600px) {
 
-.how-app-works img {
-    width: 190px;
-    height: 110px;
-    object-fit: contain;
-}
+  .container{
+    padding: 0 20px;
+  }
 
-.member img {
-    width: 190px;
-    height: 110px;
-    object-fit: contain;
+  /* Navbar center everything */
+  .navbar{
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .logo img{
+    height: 40px;
+  }
+
+  .menu{
+    flex: 0 0 100%;
+    flex-wrap: wrap;              /* links in 2 lines */
+    justify-content: center;
+    gap: 14px 18px;
+  }
+
+  .menu a{
+    font-size: 13px;
+  }
+
+  .main-btn{
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* HERO stack phone under text */
+  .hero{
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 36px;
+    gap: 20px;
+  }
+
+  .hero-left,
+  .hero-right{
+    width: 100%;
+  }
+
+  .hero-title{
+    font-size: 44px;
+    line-height: 1;
+  }
+
+  .hero-text{
+    max-width: 100%;
+  }
+
+  .store-buttons{
+    flex-wrap: wrap;
+  }
+
+  .hero-right{
+    justify-content: center;
+  }
+
+  .hero-phone{
+    width: 290px;
+  }
+
+  /* About photo grid 1 column */
+  .photo-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .photo.big{
+    grid-row: auto;
+    height: 240px;
+  }
+
+  .photo.small{
+    height: 180px;
+  }
+
+  /* Stats stack */
+  .stats{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .stat-line{
+    display: none; /* скрыть для телефона */
+  }
+
+  /* Merch 1 card per row */
+  .merch-title{
+    font-size: 38px;
+  }
+
+  .merch-item{
+    flex: 0 0 100%;
+  }
+
+  .merch-photo{
+    height: 300px;
+  }
+
+  /* Buttons in sections: full width for easier tapping */
+  .trading-btn,
+  .download-btn,
+  .sign-btn{
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Footer: tighten text sizes */
+  .footer-column h4{
+    font-size: 22px;
+  }
+
+  .footer-column a{
+    font-size: 14px;
+  }
 }
